@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+header {
+    background-color:  #014E56;
+    padding: 20px 15px;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header i{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color:  #FFFFFF;
+}
+
+.btn{
+    background-color: inherit;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 33px;
+    border-radius: 18px;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #000;
+    border: 2px solid black;
+    transition: 2s;
+}
+
+main{
+    background-color: #014E56;
+}
+
+
+
+.hero .container{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-left: 100px;
+}
+
+.about-hero-left h1{
+    color: #FFFFFF;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 44px;
+}
+
+.about-hero-right p{
+    padding-top: 140px;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-bottom: 100px;
+}
+
+.directors h2{
+    font-size: 45px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.directors{
+    background-color: #004047;
+}
+
+.img-directors{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+
+.img-director{
+    background-color: #012F34;
+    width: 325px;
+    height: 250px;
+    text-align: center;
+}
+
+.img-director img{
+    width: 100px;
+    height: 100px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.img-director h3{
+    color: #014E56;
+    padding-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.img-director p{
+    padding-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.cooperation h3{
+    font-size: 35px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-top: 110px;
+}
+
+.cooperation{
+    background-color: #012F34;
+    padding-bottom: 80px;
+}
+
+.logos-dads{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 160px;
+    height: 30px;
+}
+
+.ready{
+    background-color: #F67E7E;
+}
+
+.ready h2{
+    font-size: 40px;
+    color: #000;
+    padding-left: 320px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.ready .container {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+
+.btn2{
+    background-color: white;
+    color: #000;
+    text-align: center;
+    padding: 11px 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.btn2:hover{
+    background-color: black;
+    color: #FFFFFF;
+    border: 1px solid white;
+    transition: 2s;
+}
+
+footer{
+    background-color:  #002529;
+    padding: 20px 15px;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons-dad i{
+    font-size: 30px;
+    color: white;
+}
+
+.icons-dad {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header i{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+    .hero .container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .directors img{
+        width: 280px;
+        height: 250px;
+    }
+    .img-directors{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo {
+        width: 100px;
+        height: 15px;
+    }
+    .logos-dads{
+        gap: 20px;
+    }
+}
+
+
+
+@media (max-width:376px){
+
+    header .menu{
+        display: none;
+    }
+    .hero .container{
+        flex-direction: column;
+    }
+    header i{
+        display: block;
+    }
+    .hero .container {
+        text-align: center;
+    }
+    .hero .container p{
+        max-width: 327px;
+    }
+
+    .img-directors {
+        flex-wrap: wrap;
+    }
+    .logo{
+        width: 150px;
+        height: 20px;
+        padding-bottom: 20px;
+    }
+
+    .logos-dads {
+        flex-wrap: wrap;
+    }
+    .ready .container h2{
+        max-width: 280px;
+        padding-bottom: 30px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    .ready .container {
+        display: block;
+    }
+
+    .ready .container .btn2{
+        margin-left: 150px;
+    }
+    footer .container{
+        display: block;
+    }
+
+    footer img{
+        padding-bottom: 30px;
+    }
+
+    .icons-dad{
+        margin-left: 150px;
+    }
+}
